@@ -1,5 +1,6 @@
 body{
     font-family: 'Cabin', sans-serif;
+    border: 2px solid gray;
 }
 .container{
     margin: 5% 10% 10% 10%;
@@ -35,9 +36,15 @@ h1{
     border-radius: 5px;
     padding: 15px;}
 
-i{
+.live-button{
     margin-left: 15px;
     font-size: 14px;
+}
+.live-button
+.message-box{
+    border: 1px solid red;
+    color: black;
+    width: 40px;
 }
 
 .b-10{
@@ -65,8 +72,7 @@ i{
 .menu-blogs{
         display: flex;
         justify-content: space-between;
-align-items: flex-start;
-    }
+align-items: flex-start;}
 
 .menu{
     display: grid;
@@ -87,6 +93,13 @@ align-items: flex-start;
     border-radius: 15px;
     width: 240px;
     margin-bottom: 4%;}  
+
+.blog-detail{
+    margin: 20px 0px 20px 20px;}
+
+.blog-info{
+    display: flex;
+    justify-content: space-evenly;}
 
 .menu-items-1{
     text-decoration: none;
@@ -118,20 +131,101 @@ align-items: flex-start;
     margin: 20px;
     text-align: center;}
 
+.footer{
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.footer-items{
+    width: 650px;
+    padding: 7%;
+    margin-left: 250px;
+   }
+.goal{
+    font-size: 30px;
+    text-align: center;
+}
+hr{
+    border: 0.1px solid gray;
+    margin-top: 20px;
+}
+.nav{
+display: flex;
+justify-content: space-evenly;
+margin-top: 20px;
+}
+.sm{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;}
+
+    /* Media Queries */
+    /* Mobile devices */
+    @media only screen and (max-width: 688px) {
+.container{
+    grid-template-columns: repeat(1, 1fr);
+}
+        .banner{
+    display: flex;
+    flex-direction: column;
+}
+.banner .blog-container .footer{
+    grid-template-columns: repeat(1, 1fr);
+}
+.b-10{
+    width: 100%;
+}
+.menu-blogs{
+    flex-direction: column;
+}
+.menu{
+    margin-bottom: 10%;
+    width: 100%;
+}
+.menu-items-1 .menu-items-2 .menu-item-3{
+    width: 100%;
+}
+.blogs .blogs .blog-detail .blog-banner{
+    width: 100%;
+}
+.footer-items{
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+}
 
 
-   
+/* tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+.container{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5% 10% 5% 10%;}  
+.b-10{
+    width: 93%;
+    margin-bottom: -29%;}
+h1{font-size: 32px;}
+.details{padding: 0%;}
+.menu-blogs{
+    flex-direction: column;
 
-
-
-
-
-
+}
+.menu{
+    width: 100%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
     
+}
+.blog{
+    width: 270px;
+    margin-bottom: 5%;
+}
+.footer-items{
     
-    
-    
-    
-    
-    
+    margin-left: 0%;
+}
+.b-11{
+    width: 100%;}}
     
